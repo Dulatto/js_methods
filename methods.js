@@ -10,7 +10,7 @@ const array2 = ['d', 'e', 'f'];
 const array3 = array1.concat(array2);
 
 //console.log(array3);
-
+//////////////////////////////////////////////////////////////////////////////////////////////////
 // copyWithin() method
 
 const array7 = ['a', 'b', 'c', 'd', 'e'];
@@ -23,7 +23,7 @@ console.log(array7.copyWithin(0, 3, 4));
 console.log(array7.copyWithin(1, 3));
 // expected output: Array ["d", "d", "e", "d", "e"]
 
-
+///////////////////////////////////////////////////////////////////////////////////////////////////
 // entries() method
 // The entries() method returns a new Array Iterator
 // object that contains the key/value pairs for each index in the array.
@@ -38,6 +38,7 @@ console.log(iterator1.next().value);
 console.log(iterator1.next().value);
 // expected output: Array [1, "b"]
 
+////////////////////////////////////////////////////////////////////////////////////////////////
 // every() method should return
 //The every() method tests whether all elements in the array pass the test implemented by the provided function.
 // It returns a Boolean value.
@@ -47,3 +48,25 @@ const isBelowThreshold = (currentValue) => currentValue < 40;
 const array9 = [1, 30, 39, 29, 10, 13];
 
 console.log(array9.every(isBelowThreshold));
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+//fill() method
+//The fill() method changes all elements in an array to a static value, 
+//from a start index (default 0) to an end index (default array.length). It returns the modified array.
+const array10 = [1, 2, 3, 4];
+
+// fill with 0 from position 2 until position 4
+console.log(array10.fill(0, 2, 4));
+// expected output: [1, 2, 0, 0]
+
+// fill with 5 from position 1
+console.log(array10.fill(5, 1));
+// expected output: [1, 5, 5, 5]
+
+console.log(array10.fill(6));
+// expected output: [6, 6, 6, 6]
+
+//fill(value)
+//fill(value, start)
+//fill(value, start, end)
