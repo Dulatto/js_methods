@@ -119,3 +119,15 @@ const arr20 = [0, 1, 2, [[[3, 4]]]];
 
 console.log(arr20.flat(2));
 // expected output: [0, 1, 2, [3, 4]]
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+//forEach() method
+//The forEach() method executes a provided function once for each array element.
+
+const array14 = ['a', 'b', 'c'];
+
+array14.forEach(element => console.log(element));
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
