@@ -81,3 +81,28 @@ const result = words.filter(word => word.length > 6);
 
 console.log(result);
 // expected output: Array ["exuberant", "destruction", "present"]
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+// find() method
+// The find() method returns the value of the first element in the provided array that satisfies the provided testing function.
+// If no values satisfy the testing function, undefined is returned.
+
+const array11 = [5, 12, 8, 130, 44];
+
+const found = array11.find(element => element > 10);
+
+console.log(found);
+// expected output: 12
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// findIndex() method
+// The findIndex() method returns the index of the first element in the array that satisfies the provided testing function.
+//  Otherwise, it returns -1, indicating that no element passed the test.
+
+const array12 = [5, 12, 8, 130, 44];
+
+const isLargeNumber = (element) => element > 20;
+
+console.log(array12.findIndex(isLargeNumber));
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
