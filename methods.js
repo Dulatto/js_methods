@@ -106,3 +106,16 @@ const isLargeNumber = (element) => element > 20;
 console.log(array12.findIndex(isLargeNumber));
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+//flat() method
+//The flat() method creates a new array with all sub-array elements concatenated
+//into it recursively up to the specified depth.
+
+const arr13 = [0, 1, 2, [3, 4]];
+
+console.log(arr13.flat());
+// expected output: [0, 1, 2, 3, 4]
+
+const arr20 = [0, 1, 2, [[[3, 4]]]];
+
+console.log(arr20.flat(2));
+// expected output: [0, 1, 2, [3, 4]]
