@@ -131,3 +131,20 @@ array14.forEach(element => console.log(element));
 // expected output: "a"
 // expected output: "b"
 // expected output: "c"
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+// includes() method
+//The includes() method determines whether an array includes a certain value among its entries,
+// returning true or false as appropriate.
+const array15 = [1, 2, 3];
+
+console.log(array15.includes(2));
+// expected output: true
+
+const pets = ['cat', 'dog', 'bat'];
+
+console.log(pets.includes('cat'));
+// expected output: true
+
+console.log(pets.includes('at'));
+// expected output: false
