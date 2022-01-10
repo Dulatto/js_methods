@@ -202,3 +202,15 @@ for (const key of iterator) {
 // expected output: 0
 // expected output: 1
 // expected output: 2
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// lastIndexOf() method
+// The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present.
+// The array is searched backwards, starting at fromIndex.
+const animals1 = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
+
+console.log(animals1.lastIndexOf('Dodo'));
+// expected output: 3
+
+console.log(animals1.lastIndexOf('Tiger'));
+// expected output: 1
