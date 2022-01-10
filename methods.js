@@ -254,3 +254,19 @@ plants.pop();
 
 console.log(plants);
 // expected output: Array ["broccoli", "cauliflower", "cabbage"]
+
+//////////////////////////////////////////////////////////////////////////////////////
+// push() method
+// The push() method adds one or more elements to the end of an array and returns the new
+// length of the array.
+const animalss = ['pigs', 'goats', 'sheep'];
+
+const count = animalss.push('cows');
+console.log(count);
+// expected output: 4
+console.log(animalss);
+// expected output: Array ["pigs", "goats", "sheep", "cows"]
+
+animalss.push('chickens', 'cats', 'dogs');
+console.log(animalss);
+// expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
