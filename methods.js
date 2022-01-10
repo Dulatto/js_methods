@@ -214,3 +214,15 @@ console.log(animals1.lastIndexOf('Dodo'));
 
 console.log(animals1.lastIndexOf('Tiger'));
 // expected output: 1
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// map() method
+// The map() method creates a new array populated with the results of calling a provided function
+// on every element in the calling array.
+const array17 = [1, 4, 9, 16];
+
+// pass a function to map
+const map1 = array17.map(x => x * 2);
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
