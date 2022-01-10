@@ -188,3 +188,17 @@ console.log(elements.join(''));
 
 console.log(elements.join('-'));
 // expected output: "Fire-Air-Water"
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// keys() method
+// The keys() method returns a new Array Iterator object that contains the keys for each index in the array.
+const array16 = ['a', 'b', 'c'];
+const iterator = array16.keys();
+
+for (const key of iterator) {
+    console.log(key);
+}
+
+// expected output: 0
+// expected output: 1
+// expected output: 2
