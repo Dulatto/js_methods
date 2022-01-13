@@ -291,3 +291,20 @@ console.log(array18.reduce(reducer));
 // 5 + 1 + 2 + 3 + 4
 console.log(array18.reduce(reducer, 5));
 // expected output: 15
+
+/////////////////////////////////////////////////////////////////////////////////////
+// reverse() method
+// The reverse() method reverses an array in place. 
+//The first array element becomes the last, and the last array element becomes the first.
+
+const array19 = ['one', 'two', 'three'];
+console.log('array1:', array19);
+// expected output: "array1:" Array ["one", "two", "three"]
+
+const reversed = array19.reverse();
+console.log('reversed:', reversed);
+// expected output: "reversed:" Array ["three", "two", "one"]
+
+// Careful: reverse is destructive -- it changes the original array.
+console.log('array19:', array19);
+// expected output: "array1:" Array ["three", "two", "one"]
