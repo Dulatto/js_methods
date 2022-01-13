@@ -308,3 +308,17 @@ console.log('reversed:', reversed);
 // Careful: reverse is destructive -- it changes the original array.
 console.log('array19:', array19);
 // expected output: "array1:" Array ["three", "two", "one"]
+
+///////////////////////////////////////////////////////////////////////////////////////
+// shift() method
+// The shift() method removes the first element from an array and returns that removed element.
+// This method changes the length of the array.
+const array20 = [1, 2, 3];
+
+const firstElement = array20.shift();
+
+console.log(array20);
+// expected output: Array [2, 3]
+
+console.log(firstElement);
+// expected output: 1
