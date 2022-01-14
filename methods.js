@@ -377,3 +377,19 @@ const array22 = [1, 30, 4, 21, 100000];
 array1.sort();
 console.log(array22);
 // expected output: Array [1, 100000, 21, 30, 4]
+
+///////////////////////////////////////////////////////////////////////////////////
+//splice() method
+// The splice() method changes the contents of an array by removing or replacing existing 
+//elements and/or adding new elements in place. To access part of an array without modifying it,
+// see slice().
+const monthss = ['Jan', 'March', 'April', 'June'];
+months.splice(1, 0, 'Feb');
+// inserts at index 1
+console.log(monthss);
+// expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+monthss.splice(4, 1, 'May');
+// replaces 1 element at index 4
+console.log(monthss);
+// expected output: Array ["Jan", "Feb", "March", "April", "May"]
