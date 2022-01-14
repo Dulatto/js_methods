@@ -345,3 +345,18 @@ console.log(animalsss.slice(-2));
 
 console.log(animalsss.slice(2, -1));
 // expected output: Array ["camel", "duck"]
+
+////////////////////////////////////////////////////////////////////////////////////
+//some() method
+//The some() method tests whether at least one element in the array passes the test
+// implemented by the provided function. It returns true if,
+// in the array, it finds an element for which the provided function returns true;
+// otherwise it returns false. It doesn't modify the array.
+
+const array21 = [1, 2, 3, 4, 5];
+
+// checks whether an element is even
+const even = (element) => element % 2 === 0;
+
+console.log(array21.some(even));
+// expected output: true
