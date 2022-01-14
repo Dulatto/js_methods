@@ -360,3 +360,20 @@ const even = (element) => element % 2 === 0;
 
 console.log(array21.some(even));
 // expected output: true
+
+///////////////////////////////////////////////////////////////////////////////////
+//sort() method
+//The sort() method sorts the elements of an array in place and returns the sorted array.
+// The default sort order is ascending, built upon converting the elements into strings,
+// then comparing their sequences of UTF-16 code units values.
+//The time and space complexity of the sort cannot be guaranteed as it depends on the implementation.
+
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+const array22 = [1, 30, 4, 21, 100000];
+array1.sort();
+console.log(array22);
+// expected output: Array [1, 100000, 21, 30, 4]
