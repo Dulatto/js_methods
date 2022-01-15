@@ -405,3 +405,16 @@ const localeString = array23.toLocaleString('en', { timeZone: 'UTC' });
 console.log(localeString);
 // expected output: "1,a,12/21/1997, 2:12:00 PM",
 // This assumes "en" locale and UTC timezone - your results may vary
+
+/////////////////////////////////////////////////////////////////////////////
+// unshift() methods
+// The unshift() method adds one or more elements to the beginning of an array
+// and returns the new length of the array.
+
+const array24 = [1, 2, 3];
+
+console.log(array24.unshift(4, 5));
+// expected output: 5
+
+console.log(array24);
+// expected output: Array [4, 5, 1, 2, 3]
