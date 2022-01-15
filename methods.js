@@ -418,3 +418,18 @@ console.log(array24.unshift(4, 5));
 
 console.log(array24);
 // expected output: Array [4, 5, 1, 2, 3]
+
+///////////////////////////////////////////////////////////////////////////////
+// values() method
+//The values() method returns a new array iterator object that contains the values 
+//for each index in the array.
+const array25 = ['a', 'b', 'c'];
+const iterator = array25.values();
+
+for (const value of iterator) {
+    console.log(value);
+}
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
